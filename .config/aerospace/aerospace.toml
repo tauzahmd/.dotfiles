@@ -61,6 +61,14 @@ outer.bottom =     8
 outer.top =        8
 outer.right =      8
 
+[[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace V'
+
+[[on-window-detected]]
+if.app-id = 'com.brave.Browser'
+run = 'move-node-to-workspace B'
+
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
@@ -177,8 +185,7 @@ alt-shift-f = 'fullscreen'
 shift-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
-shift-j = 'move-node-to-monitor --wrap-around next'
-shift-k = 'move-node-to-monitor --wrap-around prev'
+
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode service'
@@ -215,3 +222,6 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 alt-f = 'macos-native-fullscreen'
 m = 'macos-native-minimize'
+
+shift-j = 'move-node-to-monitor --wrap-around next'
+shift-k = 'move-node-to-monitor --wrap-around prev'
