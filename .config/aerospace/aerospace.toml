@@ -231,3 +231,15 @@ m = 'macos-native-minimize'
 
 shift-j = 'move-node-to-monitor --wrap-around next'
 shift-k = 'move-node-to-monitor --wrap-around prev'
+
+
+[workspace-to-monitor-force-assignment]
+1 = 'main'
+2 = 'main'
+3 = 'main'
+4 = ['msi.*1', 'secondary']
+5 = ['msi.*1', 'secondary']
+6 = ['msi.*1', 'secondary']
+7 = 'msi\sg273cq.*2'
+8 = 'msi\sg273cq.*2'
+9 = 'msi\sg273cq.*2'
